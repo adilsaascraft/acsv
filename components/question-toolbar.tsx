@@ -98,7 +98,7 @@ export function QuestionToolbar({
             <RefreshCw className="h-4 w-4" />
           </motion.div>
 
-          <span className="font-medium">Refresh on every 15 seconds</span>
+          <span className="font-medium">Auto Refresh Every 15 Seconds</span>
         </button>
 
         <span className="text-muted-foreground text-sm">
