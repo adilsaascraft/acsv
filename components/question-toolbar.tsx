@@ -62,6 +62,7 @@ export function QuestionToolbar({
           variant="destructive"
           onClick={onResetAll}
           disabled={isResetting}
+          className={'h-10'}
         >
           {isResetting ? (
             <>

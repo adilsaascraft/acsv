@@ -27,8 +27,8 @@ export function useQuestions() {
    refetchOnReconnect: true,
    refetchOnWindowFocus: false,
 
-   // ⭐ Automatically fetch every 30 seconds
-   refetchInterval: 30_000,
+   // ⭐ Automatically fetch every 15 seconds
+   refetchInterval: 15_000,
 
    // ⭐ Continue polling even if the tab isn't focused
    refetchIntervalInBackground: true,
