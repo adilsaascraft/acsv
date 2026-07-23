@@ -56,14 +56,8 @@ export function QuestionCard({ question }: QuestionCardProps) {
                   </div>
 
                   <DropdownMenu>
-                    <DropdownMenuTrigger>
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        className="h-8 w-8 shrink-0 rounded-full"
-                      >
-                        <MoreVertical className="h-4 w-4" />
-                      </Button>
+                    <DropdownMenuTrigger className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full hover:bg-accent">
+                      <MoreVertical className="h-4 w-4" />
                     </DropdownMenuTrigger>
 
                     <DropdownMenuContent align="end">
@@ -88,10 +82,9 @@ export function QuestionCard({ question }: QuestionCardProps) {
               </div>
 
               <div className="min-w-0 flex-1">
-                <p className="truncate text-base font-semibold text-sky-800 transition-colors hover:text-sky-900">
+                <p className="truncate text-base font-semibold text-foreground/80 transition-colors hover:text-sky-900">
                   {question.name}
                 </p>
-
               </div>
             </div>
 
