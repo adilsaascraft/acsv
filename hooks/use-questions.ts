@@ -11,17 +11,26 @@ export const questionQueryKeys = {
 }
 
 export function useQuestions() {
-  return useQuery<Question[]>({
-    queryKey: questionQueryKeys.active(),
-    queryFn: async () => {
-      const response = await questionService.getActiveQuestions()
-      return response.data
-    },
-    staleTime: 0,
-    gcTime: 0,
-    retry: 1,
-    refetchOnMount: 'always',
-    refetchOnReconnect: true,
-    refetchOnWindowFocus: false,
-  })
+ return useQuery<Question[]>({
+   queryKey: questionQueryKeys.active(),
+   queryFn: async () => {
+     const response = await questionService.getActiveQuestions()
+     return response.data
+   },
+
+   staleTime: 0,
+   gcTime: 0,
+
+   retry: 1,
+
+   refetchOnMount: 'always',
+   refetchOnReconnect: true,
+   refetchOnWindowFocus: false,
+
+   // ⭐ Automatically fetch every 30 seconds
+   refetchInterval: 30_000,
+
+   // ⭐ Continue polling even if the tab isn't focused
+   refetchIntervalInBackground: true,
+ })
 }
