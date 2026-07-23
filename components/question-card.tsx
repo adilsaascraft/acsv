@@ -53,10 +53,6 @@ export function QuestionCard({ question }: QuestionCardProps) {
                     <h3 className="break-all whitespace-pre-wrap text-base font-semibold leading-7 text-sky-800 transition-colors duration-200 hover:text-sky-900">
                       {question.questionName}
                     </h3>
-
-                    <p className="mt-2 text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                      Live Delegate Question
-                    </p>
                   </div>
 
                   <DropdownMenu>
@@ -96,9 +92,6 @@ export function QuestionCard({ question }: QuestionCardProps) {
                   {question.name}
                 </p>
 
-                <p className="text-sm text-muted-foreground">
-                  Conference Delegate
-                </p>
               </div>
             </div>
 
