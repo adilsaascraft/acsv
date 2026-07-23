@@ -53,8 +53,8 @@ export function QuestionToolbar({
           <Input
             value={value}
             onChange={(e) => setValue(e.target.value)}
-            placeholder="Search by question or delegate..."
-            className="pl-10"
+            placeholder="Search by question or delegate name..."
+            className="pl-10 h-10"
           />
         </div>
 
@@ -97,7 +97,7 @@ export function QuestionToolbar({
             <RefreshCw className="h-4 w-4" />
           </motion.div>
 
-          <span className="font-medium">Refresh</span>
+          <span className="font-medium">Refresh on every 15 seconds</span>
         </button>
 
         <span className="text-muted-foreground text-sm">

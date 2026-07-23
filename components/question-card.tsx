@@ -59,24 +59,7 @@ export function QuestionCard({ question }: QuestionCardProps) {
                 </p>
               </div>
             </div>
-
-            <DropdownMenu>
-              <DropdownMenuTrigger>
-                <Button variant="ghost" size="icon">
-                  <MoreVertical className="h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem
-                  className="cursor-pointer text-destructive focus:text-destructive"
-                  onClick={() => setOpen(true)}
-                >
-                  <RotateCcw className="mr-2 h-4 w-4" />
-                  Reset Question
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            ...
           </CardHeader>
 
           <CardContent className="space-y-5">
