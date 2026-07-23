@@ -72,7 +72,7 @@ export default function QuestionsPage() {
         ) : (
           <motion.div
             layout
-            className="grid gap-6 md:grid-cols-2 xl:grid-cols-3"
+            className="grid gap-6 md:grid-cols-2 xl:grid-cols-2"
           >
             <AnimatePresence mode="popLayout">
               {filteredQuestions.map((question) => (
